@@ -3,33 +3,146 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>InkTasks — handwritten to-dos</title>
-<link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css">
+<title>InkTasks — handwritten notes where to-dos write themselves</title>
+<meta name="description" content="InkTasks is a handwriting notebook for Android tablets with a stylus. Anything you write in [square brackets] becomes a task with a due date and a reminder. Your notes stay on your device.">
+<link rel="canonical" href="https://inktasks.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="InkTasks">
+<meta property="og:title" content="InkTasks — handwritten notes where to-dos write themselves">
+<meta property="og:description" content="InkTasks is a handwriting notebook for Android tablets with a stylus. Anything you write in [square brackets] becomes a task with a due date and a reminder. Your notes stay on your device.">
+<meta property="og:url" content="https://inktasks.com/">
+<meta property="og:image" content="https://inktasks.com/feature-graphic.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#F5F6F8">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/fraunces.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="/style.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header><a class="brand" href="index.html"><svg class="icon" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#17181C"/><path d="M28 28V80M28 28H40M28 80H40M80 28V80M80 28H68M80 80H68" stroke="#FCFAF6" stroke-width="5" fill="none" stroke-linecap="square"/><path d="M48 56L54 62L62 46" stroke="#8FA8FF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>InkTasks</span></a><nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete-account.html">Delete account</a></nav></header>
+<header class="nav"><div class="nav-pill"><a class="brand" href="/"><svg class="icon" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#17181C"/><path d="M28 28V80M28 28H40M28 80H40M80 28V80M80 28H68M80 80H68" stroke="#FCFAF6" stroke-width="5" fill="none" stroke-linecap="square"/><path d="M48 56L54 62L62 46" stroke="#8FA8FF" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span>InkTasks</span></a><nav class="nav-links" aria-label="Main"><a class="text" href="/#how">How it works</a><a class="text" href="/#price">Price</a><a class="text" href="/#help">Help</a><a class="pill" href="/#get">Get the app<span class="dot"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 11.5l7-7M6 4.5h5.5V10"/></svg></span></a></nav></div></header>
 <main>
-<h1 class="visually-hidden">InkTasks</h1>
-<img class="hero" src="feature-graphic.png" alt="A handwritten note where [pay rent friday] has become a task with a due date.">
-<p class="lead">Your handwriting, organised. InkTasks is a notebook for your stylus where to-dos write themselves.</p>
-<h2>Write naturally, capture tasks as you go</h2>
-<p>Take notes by hand, exactly as on paper. Put anything in square brackets — [call the bank friday] — and it becomes a task. InkTasks reads the date you wrote too: "friday", "tomorrow", "in 3 days", "every monday".</p>
-<h2>One list for everything you wrote</h2>
-<p>Every bracket from every note lands in one to-do list, sorted into overdue, today and upcoming. Tick a task and it's crossed out in your note. Tap a task to jump straight back to where you wrote it.</p>
-<h2>Reminders and your calendar</h2>
-<p>Set a reminder on any task, get a daily summary of what's due, and sync your tasks to the calendar you already use.</p>
-<h2>A notebook that feels like paper</h2>
-<p>Pen, marker, highlighter and eraser. Ruled, grid, dotted or blank pages in soft colours. Add pictures and move them around, import a PDF and write on it, export any note as a PDF.</p>
-<h2>Folders, search and a recycle bin</h2>
-<p>File notes into folders, find them by title, and get a deleted note back within 30 days.</p>
-<h2>Private by design</h2>
-<p>Your notes stay on your device. Handwriting is recognised on the device, never uploaded. Back up your whole library to a file whenever you like — to the device or the cloud storage you choose.</p>
-<h2>Subscription</h2>
-<p>Try everything free for one month. After that, InkTasks is a subscription, monthly or yearly; the prices are shown in the app before you subscribe. Cancel any time in Google Play. Without a subscription you can still read every note and tick tasks off — your notes are never locked away.</p>
-<p>Made for Android tablets with a stylus, such as the Samsung Galaxy Tab with S Pen.</p>
-<p>Terms: <a href="https://inktasks.com/terms">https://inktasks.com/terms</a> · Privacy: <a href="https://inktasks.com/privacy">https://inktasks.com/privacy</a></p>
+<section class="hero">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">For Android tablets with a stylus</span>
+      <h1><span class="line">Write it in</span> <span class="line"><span class="task">[brackets]</span>.</span> <span class="line">It becomes a task.</span></h1>
+      <p class="lead">InkTasks is a handwriting notebook where to-dos write themselves. Take notes as you would on paper, and what you bracket lands in your list, with its date.</p>
+      <div class="cta">
+        <span class="pill plain" id="get">Coming soon to Google Play</span>
+        <a class="more" href="#how">See how it works</a>
+      </div>
+      <p class="fine">Free for the first month. Your notes never leave your device.</p>
+    </div>
+    <div class="tray reveal"><img src="shots/hero.webp" width="1400" height="764" alt="A handwritten note. The line [call the bank friday] is underlined in blue, and a card beside it reads: Due Friday 09 Oct 2026, read from &quot;friday&quot;."></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>You write. InkTasks keeps track.</h2>
+      <p>Put anything in square brackets and it becomes a task. It reads the date you wrote too: "friday", "tomorrow", "in 3 days", "every monday".</p>
+    </div>
+    <div class="tiles">
+      <article class="tile wide reveal">
+        <span class="eyebrow">One list</span>
+        <h3>Everything you bracketed, in one place</h3>
+        <p>Every task from every note, sorted into overdue, today and upcoming. Tick one and it's crossed out in your note. Tap one to jump back to where you wrote it.</p>
+        <div class="tray"><img src="shots/todo.webp" width="1120" height="904" alt="The To-Do list: tasks grouped under Needs a date, Overdue, Today and Upcoming, each with the note it came from." loading="lazy"></div>
+      </article>
+      <article class="tile narrow reveal">
+        <span class="eyebrow">Time</span>
+        <h3>Reminders and your calendar</h3>
+        <p>Set a reminder on any task, get a daily summary of what's due, and sync tasks to the calendar you already use.</p>
+        <div class="tray"><img src="shots/calendar.webp" width="790" height="740" alt="The tasks due on Friday 09 Oct 2026, listed beside the calendar: email sam, order tiles, book the hotel, call the bank." loading="lazy"></div>
+      </article>
+      <article class="tile narrow reveal">
+        <span class="eyebrow">Paper</span>
+        <h3>A notebook that feels like paper</h3>
+        <p>Pen, marker, highlighter and eraser. Ruled, grid, dotted or blank pages. Add pictures, import a PDF and write on it, export any note as a PDF.</p>
+        <div class="tray"><img src="shots/picture.webp" width="1400" height="672" alt="A note page with a picture placed on it and handwriting around the picture." loading="lazy"></div>
+      </article>
+      <article class="tile wide reveal">
+        <span class="eyebrow">Library</span>
+        <h3>Folders, search and a recycle bin</h3>
+        <p>File notes into folders, find them by title, and get a deleted note back within 30 days.</p>
+        <div class="tray"><img src="shots/library.webp" width="1400" height="923" alt="The notes library: four folders and a row of note thumbnails, each showing how many open tasks it has." loading="lazy"></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="private reveal">
+      <div class="section-head">
+        <span class="eyebrow">Private by design</span>
+        <h2>Your notes stay on your device.</h2>
+      </div>
+      <div class="facts">
+        <div><h3>Never uploaded</h3><p>Notes, pictures and PDFs are stored on your tablet. We can't see them.</p></div>
+        <div><h3>Recognised on the device</h3><p>Your handwriting is read on the tablet itself. It is never sent anywhere.</p></div>
+        <div><h3>Backups where you choose</h3><p>Save your whole library to a file whenever you like, on the device or in the cloud storage you pick.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="wrap price">
+    <div class="section-head reveal" style="margin-bottom:0">
+      <span class="eyebrow">Price</span>
+      <h2>Free for a month. Then one simple subscription.</h2>
+      <p>Cancel any time in Google Play. Without a subscription you can still read every note and tick tasks off: your notes are never locked away.</p>
+    </div>
+    <div class="reveal">
+      <div class="plans">
+        <div class="plan"><div class="name">Monthly</div><div class="amount">US$3.99</div><div class="per">a month</div><span class="trial">1 month free</span></div>
+        <div class="plan"><div class="name">Yearly</div><div class="amount">US$40.99</div><div class="per">a year</div><span class="trial">1 month free</span></div>
+      </div>
+      <p class="fine">Prices vary by country; yours is shown in the app before you subscribe.</p>
+    </div>
+  </div>
+</section>
+
+<section id="help">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Help</span>
+      <h2>Questions people ask</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Which devices does it work on?</summary><div class="answer"><p>Android tablets with a stylus, such as the Samsung Galaxy Tab with S Pen, running Android 10 or newer.</p></div></details>
+      <details><summary>Where are my notes stored?</summary><div class="answer"><p>On your tablet only. Use Settings → Backup to save a copy to a file, and restore from that file on a new device.</p></div></details>
+      <details><summary>How do I cancel?</summary><div class="answer"><p>In the Google Play app: your profile picture → Payments and subscriptions → Subscriptions → InkTasks → Cancel. In InkTasks, Settings → Account opens the same page. You keep access until the end of the period you paid for.</p></div></details>
+      <details><summary>I've got a new tablet. How do I get my subscription back?</summary><div class="answer"><p>Sign in to InkTasks with the same Google account. If it doesn't unlock, tap Restore purchases on the subscription screen.</p></div></details>
+      <details><summary>How do I get in touch?</summary><div class="answer"><p>Write to <a href="mailto:support@inktasks.com">support@inktasks.com</a>.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap reveal">
+    <h2>Your handwriting, organised.</h2>
+    <span class="pill plain">Coming soon to Google Play</span>
+  </div>
+</section>
+
 </main>
-<footer>Ahmed Al Balushi · <a href="mailto:support@inktasks.com">support@inktasks.com</a></footer>
+<footer class="foot"><div class="wrap"><span>© 2026 Ahmed Al Balushi · <a href="mailto:support@inktasks.com">support@inktasks.com</a></span><nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/delete-account">Delete account</a></nav></div></footer>
+<script>
+(function () {
+  var items = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) { items.forEach(function (el) { el.classList.add("in"); }); return; }
+  var seen = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) { entry.target.classList.add("in"); seen.unobserve(entry.target); }
+    });
+  }, { rootMargin: "0px 0px -8% 0px" });
+  items.forEach(function (el) { seen.observe(el); });
+})();
+</script>
 </body>
 </html>
